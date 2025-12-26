@@ -102,7 +102,7 @@ body {
 }
 
 .hero-image img {
-    max-width: 420px;
+    max-width: 380px;
 }
 
 /* ================= ABOUT ================= */
@@ -117,7 +117,7 @@ body {
 }
 
 .about-image img {
-    max-width: 380px;
+    max-width: 340px;
 }
 
 .about-text h2 {
