@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Links Page with Clock</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #b49aef;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        #clock {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #004aad;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60ea44;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 55%;
+            background: rgb(212, 161, 128);
+            margin-top: 30px;
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Useful Website Links</h1>
+        <div id="clock">00:00:00</div>
+    </header>
+
+    <br>
+
+    <nav>
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+        <a href="https://www.github.com" target="_blank">GitHub</a>
+        <a href="https://www.stackoverflow.com" target="_blank">StackOverflow</a>
+    </nav>
+
+    <table border="1">
+        <tr>
+            <th>Website Name</th>
+            <th>Visit Link</th>
+        </tr>
+        <tr>
+            <td>Wikipedia</td>
+            <td><a href="https://www.wikipedia.org" target="_blank">Open</a></td>
+        </tr>
+        <tr>
+            <td>GitHub</td>
+            <td><a href="https://www.github.com" target="_blank">Open</a></td>
+        </tr>
+        <tr>
+            <td>StackOverflow</td>
+            <td><a href="https://www.stackoverflow.com" target="_blank">Open</a></td>
+        </tr>
+    </table>
+
+    <script>
+        function updateClock() {
+            let now = new Date();
+            let time = now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML = time;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
+</body>
+</html>

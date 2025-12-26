@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f5f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      table {
+        width: 450px;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      caption {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border-radius: 10px 10px 0 0;
+      }
+
+      th {
+        background: #eff3f7;
+        padding: 12px;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #ddd;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+      }
+
+      tr:hover {
+        background: #f8fbff;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        Matches Report
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Match</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Virat Kohli</td>
+          <td>34</td>
+          <td>IPL 2024</td>
+        </tr>
+        <tr>
+          <td>Rohit Sharma</td>
+          <td>116</td>
+          <td>IPL 2024</td>
+        </tr>
+        <tr>
+          <td>MS Dhoni</td>
+          <td>32</td>
+          <td>IPL 2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f5b700;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #f5b700;
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hello {
+    color: #f5b700;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero-text h1 span {
+    color: #f5b700;
+}
+
+.hero-text p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.primary {
+    background: #f5b700;
+    color: #000;
+}
+
+.secondary {
+    border: 1px solid #f5b700;
+    color: #f5b700;
+}
+
+.hero-image img {
+    max-width: 420px;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 380px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-desc {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.about-info {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.about-info li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.about-info strong {
+    color: #f5b700;
+}
+
+.projects {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.projects span {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+}
+
+.skills-desc {
+    color: #aaa;
+    margin: 15px 0 50px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 50px;
+}
+
+.skill span {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.bar {
+    background: #222;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: #f5b700;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* ---------- Large Tablets & Small Laptops ---------- */
+@media (max-width: 1024px) {
+
+    .hero-content {
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-image img {
+        max-width: 360px;
+    }
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .about-image img {
+        max-width: 320px;
+    }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    /* About */
+    .about {
+        padding: 80px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-info {
+        text-align: left;
+        display: inline-block;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* ---------- Mobile Devices ---------- */
+@media (max-width: 480px) {
+
+    .container {
+        width: 95%;
+    }
+
+    /* Header */
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero-text h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+
+    .hero-image img {
+        max-width: 240px;
+    }
+
+    /* About */
+    .about-text h2,
+    .skills h2 {
+        font-size: 28px;
+    }
+
+    .about-desc,
+    .skills-desc {
+        font-size: 14px;
+    }
+
+    .about-info li {
+        font-size: 13px;
+    }
+
+    .projects {
+        font-size: 16px;
+    }
+
+    /* Skills */
+    .skill span {
+        font-size: 14px;
+    }
+
+    .bar {
+        height: 5px;
+    }
+}

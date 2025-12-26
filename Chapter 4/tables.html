@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  table th {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 2px solid black;
+  }
+
+  table td {
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+    border: 2px solid black;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #afd1e3;
+  }
+  table tr:hover {
+    background-color: #f79f9f ;
+    transition: 0.3s;
+  }
+
+</style>
+
+  </head>
+  <body>
+    <h1>Tables in HTML</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Priyanshu</td>
+          <td>Software Developer</td>
+          <td>10 lac</td>
+        </tr>
+        <tr>
+          <td>Ayush Kumar</td>
+          <td>Web Developer</td>
+          <td>20 lac</td>
+        </tr>
+        <tr>
+          <td>vernik Kumar</td>
+          <td>Software Developer</td>
+          <td>15 lac</td>
+        </tr>
+        <tr>
+          <td>Raj Thakur</td>
+          <td colspan="2">ML Engineer</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
